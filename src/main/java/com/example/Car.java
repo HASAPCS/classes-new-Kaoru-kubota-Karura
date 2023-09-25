@@ -5,10 +5,12 @@ public class Car {
 
     public Car() {
         // TODO: Initialize the speed to 0
+        speed = 0;
     }
 
     public void speedUp(int increment) {
         // TODO: Increase the speed by the value of the increment parameter
+        
     }
 
     public void slowDown(int decrement) {
