@@ -5,6 +5,7 @@ public class BankAccount {
 
     public BankAccount(double balance) {
         // TODO: Initialize the balance
+        balance = 100;
     }
 
     public void deposit(double amount) {

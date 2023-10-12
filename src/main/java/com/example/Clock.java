@@ -6,11 +6,14 @@ public class Clock {
 
     public Clock(int hours, int minutes) {
         // TODO: Initialize the hours and minutes
+        hours = 0
+        minutes = 0
     }
 
     public void addMinutes(int minutes) {
         // TODO: Add the value of the minutes parameter to the current minutes. 
         // Adjust the hours and minutes accordingly to represent a valid time.
+        
     }
 
     public String getTime() {
