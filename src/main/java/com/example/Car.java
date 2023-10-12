@@ -10,16 +10,20 @@ public class Car {
 
     public void speedUp(int increment) {
         // TODO: Increase the speed by the value of the increment parameter
-        
+        speed = speed + increment;
     }
 
     public void slowDown(int decrement) {
         // TODO: Decrease the speed by the value of the decrement parameter. 
         // The speed should not be negative.
+        speed = speed - decrement;
+        if (speed < 0){
+            speed = speed + decrement;
+        }
     }
 
     public int currentSpeed() {
         // TODO: Return the current speed
-        return 0;  // Change this default return statement
+        return speed;  // Change this default return statement
     }
 }

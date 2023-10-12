@@ -5,20 +5,25 @@ public class BankAccount {
 
     public BankAccount(double balance) {
         // TODO: Initialize the balance
-        balance = 100;
+        this.balance = balance;
     }
 
     public void deposit(double amount) {
         // TODO: Increase the balance by the value of the amount parameter
+        balance = balance + amount;
     }
 
     public void withdraw(double amount) {
         // TODO: Decrease the balance by the value of the amount parameter. 
         // Ensure that the balance does not become negative.
+        balance = balance - amount;
+        if (balance < 0 ){
+            balance = balance + amount;
+        }
     }
 
     public double getBalance() {
         // TODO: Return the current balance
-        return 0;  // Change this default return statement
+        return balance;  // Change this default return statement
     }
 }
